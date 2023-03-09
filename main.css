@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --FONT-COLOR: #000;
+    --LINK-COLOR: #fff;
+    --FONT-SIZE: 1.5rem;
+}
+.container{
+    width: 100%;
+    background-color: #ffc2d1;
+    min-height: 100vh;
+    display: grid;
+    place-content: center center;
+}
+
+.head{
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+a{
+    display: block;
+    font-size: var(--FONT-SIZE);
+    width: 100%;
+    padding:1em;
+    outline-offset: 0.4rem;
+    text-align: center;
+    background-color: var(--LINK-COLOR);
+    color: var(--FONT-COLOR);
+    font-weight: 900;
+    border-radius: 5%;
+    box-shadow: 5px 7px 0 0 rgba(0,0,0, 0.5);
+
+}
+
+a + a{
+    margin-top: 1.75em;
+}
+
+a:hover, a:focus{
+    box-shadow: 12px 13px 0 0 rgba(0,0,0,0.8);
+}
